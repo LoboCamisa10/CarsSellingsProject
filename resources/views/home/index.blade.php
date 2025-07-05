@@ -682,20 +682,6 @@
 
 
 <x-app-layout title="Home Page">
-    @php
-      $color = 'blue';
-      $bgColor = 'white';
-    @endphp
-
-    <x-card :color="$color" :$bgColor  class="card-rounded">
-      <x-slot name="title" class="card-header-blue"> Card Title 1</x-slot>
-      <p>Teste 1 </p>
-      <x-slot:footer> Card footer 1</x-slot>
-    </x-card>
-
-    <x-test-component class="card">
-      Lorem ipsum dolor
-    </x-test-component>
 
     <!-- Home Slider -->
     <section class="hero-slider">
@@ -805,17 +791,6 @@
       </section>
       <!--/ New Cars -->
     </main>
-
-    {{-- @section('footerLinksIndex')
-      @parent
-      <a href="#">Link X</a><br>
-      <a href="#">Link Z</a>
-    @endsection --}}
-
-    <x-slot:footerLinks>
-      <a href="#">Link X</a><br>
-      <a href="#">Link Z</a>
-    </x-slot:footerLinks>
 
 </x-app-layout>
 
