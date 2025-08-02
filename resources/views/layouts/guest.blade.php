@@ -21,7 +21,6 @@
             <div class="login-text-dont-have-account">
               {{$footerLink}}
             </div>
-
           </div>
 
           <div class="auth-page-image">
